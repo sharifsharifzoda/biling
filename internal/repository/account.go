@@ -5,7 +5,6 @@ import (
 	"biling/models"
 	"database/sql"
 	"errors"
-	"fmt"
 	"log"
 )
 
@@ -80,7 +79,7 @@ func (a AccountRepository) Transaction(tr models.Transaction) error {
 	}
 
 	err = errors.New(result)
-	fmt.Println(err)
+	//fmt.Println(err)
 	return err
 }
 
